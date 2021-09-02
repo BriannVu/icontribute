@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-companyIntro">
+            <p id="logo">iContribute</p>
+            <p id="slogan">We rise by lifting others</p>
+        </div>
+        <nav id="header-navContainer">
+            <span class="navItem" id="volunteerNav">VOLUNTEERS</span>
+            <span class="navItem" id="organizationsNav">ORGANIZATIONS</span>
+            <span class="navItem">OUR TEAM</span>
+        </nav>
+    </header>
+    <div id="organization-page">
+        <h2 class="center">Tell us the information about your volunteer event</h2>
+        <form id="organizationForm" onsubmit="return false">
+            <span class="form-inputHeading">Name of Organization</span>
+            <input type="text" id="form-nameOfOrganization" class="form-input" value="iContribute" required>
+            <span class="form-inputHeading">Website URL</span>
+            <input type="text" id="form-websiteUrl" class="form-input" value="https://icontribute.community/#/" required>
+            <span class="form-inputHeading">Organization Image URL</span>
+            <input type="text" id="form-organizationImageUrl" class="form-input" value="https://media-exp1.licdn.com/dms/image/C560BAQEOxa72X6T-tg/company-logo_200_200/0/1619226449459?e=1638403200&v=beta&t=DA_e23QcjRHMKGzB1uDyZw76vGKLnUbhJEGJQK9SILk" required>
+            <span class="form-inputHeading">Postal Code</span>
+            <input type="text" id="form-postalCode" class="form-input" value="L4K 3B9" required>
+            <span class="form-inputHeading">Categories</span>
+            <input type="text" id="form-categories" class="form-input" value="Job" required>
+            <span class="form-inputHeading">Heading</span>
+            <input type="text" id="form-heading" class="form-input" value="Event Helper" required>
+            <span class="form-inputHeading">Description</span>
+            <input type="text" id="form-description" class="form-input" value="Planning event details and aspects, including seating, dining and guests." required>
+            <span class="form-inputHeading">Date</span>
+            <input type="date" class="form-input" id="form-date" value="2021-02-09" required>
+            <input type="submit" id="submitOrganizationForm" value="POST">
+        </form>
+    </div>
+    <div id="volunteer-page">
+        <div>
+            <h2 class="center">Lastest Events For Volunteer</h2>
+            <div id="eventItemContainer">
+            </div>
+            <h2 class="center marginTop100px">A list of users who using iContribute App</h2>
+            <div id="userList" class="center">
+            </div>
+
+            <script src="scripts/script.js "></script>
+</body>
+
+</html>
